@@ -26,7 +26,10 @@
                 HorizontalOptions="Center"
                 Orientation="Vertical"
                 VerticalOptions="Center">
-                <Button Command="{Binding GoToHomeCommand}" Text="Entrar" />
+                <Button
+                    Command="{Binding GoToHomeCommand}"
+                    FontSize="20"
+                    Text="Entrar" />
             </StackLayout>
             <StackLayout
                 Grid.Row="2"

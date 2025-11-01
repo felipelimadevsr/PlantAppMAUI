@@ -16,6 +16,7 @@
                 Orientation="Vertical"
                 VerticalOptions="Center">
                 <Label
+                    FontSize="24"
                     HorizontalOptions="Center"
                     Text="Plant Create Page"
                     VerticalOptions="Center" />
@@ -25,9 +26,18 @@
                 HorizontalOptions="Center"
                 Orientation="Vertical"
                 VerticalOptions="Center">
-                <Button Command="{Binding GoToHomeCommand}" Text="Home" />
-                <Button Command="{Binding PickImageFileCommand}" Text="Choose Image" />
-                <Button Command="{Binding TakePhotoCommand}" Text="Take Photo" />
+                <Button
+                    Command="{Binding GoToHomeCommand}"
+                    FontSize="20"
+                    Text="Home" />
+                <Button
+                    Command="{Binding PickImageFileCommand}"
+                    FontSize="20"
+                    Text="Choose Image" />
+                <Button
+                    Command="{Binding TakePhotoCommand}"
+                    FontSize="20"
+                    Text="Take Photo" />
             </StackLayout>
             <StackLayout
                 Grid.Row="2"

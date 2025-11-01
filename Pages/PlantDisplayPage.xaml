@@ -16,6 +16,7 @@
                 Orientation="Vertical"
                 VerticalOptions="Center">
                 <Label
+                    FontSize="24"
                     HorizontalOptions="Center"
                     Text="Plant Display Page"
                     VerticalOptions="Center" />
@@ -25,8 +26,14 @@
                 HorizontalOptions="Center"
                 Orientation="Vertical"
                 VerticalOptions="Center">
-                <Button Command="{Binding GoToHomeCommand}" Text="Home" />
-                <Button Command="{Binding GoToPlantSettingsCommand}" Text="Settings" />
+                <Button
+                    Command="{Binding GoToHomeCommand}"
+                    FontSize="20"
+                    Text="Home" />
+                <Button
+                    Command="{Binding GoToPlantSettingsCommand}"
+                    FontSize="20"
+                    Text="Settings" />
             </StackLayout>
             <StackLayout
                 Grid.Row="2"

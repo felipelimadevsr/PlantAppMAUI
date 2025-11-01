@@ -16,6 +16,7 @@
                 Orientation="Vertical"
                 VerticalOptions="Center">
                 <Label
+                    FontSize="24"
                     HorizontalOptions="Center"
                     Text="Home Settings Page"
                     VerticalOptions="Center" />
@@ -25,14 +26,20 @@
                 HorizontalOptions="Center"
                 Orientation="Vertical"
                 VerticalOptions="Center">
-                <Button Command="{Binding GoToHomeCommand}" Text="Home" />
+                <Button
+                    Command="{Binding GoToHomeCommand}"
+                    FontSize="20"
+                    Text="Home" />
             </StackLayout>
             <StackLayout
                 Grid.Row="2"
                 HorizontalOptions="Center"
                 Orientation="Vertical"
                 VerticalOptions="Center">
-                <Button Command="{Binding GoToLoginCommand}" Text="Logout" />
+                <Button
+                    Command="{Binding GoToLoginCommand}"
+                    FontSize="20"
+                    Text="Logout" />
             </StackLayout>
         </Grid>
     </ScrollView>

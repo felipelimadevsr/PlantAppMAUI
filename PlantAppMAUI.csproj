@@ -38,6 +38,17 @@
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 	</PropertyGroup>
 
+	<PropertyGroup Condition="'$(Configuration)'=='Debug'">
+    <AndroidSupportedAbis>arm64-v8a;armeabi-v7a</AndroidSupportedAbis>
+		<!--<AndroidSupportedAbis>x86_64</AndroidSupportedAbis>-->
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)'=='Release'">
+		<AndroidSupportedAbis>arm64-v8a;armeabi-v7a</AndroidSupportedAbis>
+		<!-- Optional: enable multi-ABI bundle to support all at once -->
+	  <!--<AndroidPackageFormat>aab</AndroidPackageFormat>--> 
+	</PropertyGroup>
+
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />

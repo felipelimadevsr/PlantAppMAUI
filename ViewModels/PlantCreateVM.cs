@@ -42,7 +42,7 @@ public partial class PlantCreateVM : ObservableObject
     {
         if (MediaPicker.Default.IsCaptureSupported)
         {
-            FileResult photo = await MediaPicker.Default.CapturePhotoAsync();
+            FileResult? photo = await MediaPicker.Default.CapturePhotoAsync();
             if (photo != null)
             {
                 string localFilePath = Path.Combine(FileSystem.CacheDirectory, photo.FileName);
