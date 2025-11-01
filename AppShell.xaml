@@ -4,11 +4,14 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:PlantAppMAUI"
-    Title="PlantAppMAUI">
+    xmlns:pages="clr-namespace:PlantAppMAUI.Pages"
+    Title="PlantAppMAUI"
+    Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
-
+    <ShellContent ContentTemplate="{DataTemplate pages:LoginPage}" Route="LoginPage" />
+    <ShellContent ContentTemplate="{DataTemplate pages:HomePage}" Route="HomePage" />
+    <ShellContent ContentTemplate="{DataTemplate pages:HomeSettingsPage}" Route="HomeSettingsPage" />
+    <ShellContent ContentTemplate="{DataTemplate pages:PlantDisplayPage}" Route="PlantDisplayPage" />
+    <ShellContent ContentTemplate="{DataTemplate pages:PlantCreatePage}" Route="PlantCreatePage" />
+    <ShellContent ContentTemplate="{DataTemplate pages:PlantSettingsPage}" Route="PlantSettingsPage" />
 </Shell>
