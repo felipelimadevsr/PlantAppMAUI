@@ -10,7 +10,7 @@ PlantAppMAUI é um aplicativo multiplataforma (Android, iOS, macOS e Windows) de
 | Funcionalidade | Descrição |
 |----------------|-----------|
 | **Galeria Interativa** | Navegue por coleções organizadas por família, habitat ou uso (ornamental, medicinal, alimentício). |
-| **Detalhes Completo** | Cada planta exibe: nome científico e popular, origem geográfica, requisitos de cultivo, benefícios terapêuticos, curiosidades botânicas e dados de mercado. |
+| **Detalhes Completos** | Cada planta exibe: nome científico e popular, origem geográfica, requisitos de cultivo, benefícios terapêuticos, curiosidades botânicas e dados de mercado. |
 | **Modo Offline** | Baixe conjuntos completos para consulta sem conexão – ideal para exploradores em trilhas ou profissionais de campo. |
 | **Busca Avançada** | Filtre por características (cor das flores, tamanho da folha) ou use a câmera do dispositivo para reconhecimento rápido de espécies. |
 | **Compartilhamento Social** | Compartilhe fotos e fichas diretamente no Instagram, WhatsApp ou email. |
@@ -21,7 +21,7 @@ PlantAppMAUI é um aplicativo multiplataforma (Android, iOS, macOS e Windows) de
 ## 🛠️ Tecnologias usadas
 
 - **MAUI (Multi-platform App UI)** – Uma única base de código para Android, iOS, macOS e Windows.  
-- **C# 12 & .NET 8** – Linguagem moderna com recursos avançados como pattern matching, records e interpolated strings.  
+- **C# 14 & .NET 10** – Linguagem moderna com recursos avançados como pattern matching, records e interpolated strings.  
 - **XAML** – Interface declarativa com suporte a estilos globais e templates reutilizáveis.  
 - **MVVM Pattern** – Separação clara de UI, lógica e dados, facilitando testes unitários e manutenção.  
 - **SQLite (PCLStorage)** – Armazenamento local rápido e confiável para os bancos de dados offline.  
@@ -37,8 +37,8 @@ PlantAppMAUI é um aplicativo multiplataforma (Android, iOS, macOS e Windows) de
    git clone https://github.com/seuusuario/PlantAppMAUI.git
    ```
 
-2. Instale as dependências do .NET 8 SDK e do MAUI.  
-3. Abra a solução no Visual Studio 17.8+ (ou VS Code + CLI).  
+2. Instale as dependências do .NET 10 SDK e do MAUI.  
+3. Abra a solução no Visual Studio 18.0+ (ou VS Code + CLI).  
 4. Execute o projeto em um simulador ou dispositivo real:  
 
    ```bash
